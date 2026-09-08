@@ -19,8 +19,8 @@ def caesar_decryption(text, shift):
     return caesar_encryption(text, -shift)
 
 
-plaintext = "Network Security"
-shift = 3
+plaintext = input()
+shift = int(input())
 
 ciphertext = caesar_encryption(plaintext, shift)
 decrypted = caesar_decryption(ciphertext, shift)
