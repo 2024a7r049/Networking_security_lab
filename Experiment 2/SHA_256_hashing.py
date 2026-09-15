@@ -1,5 +1,10 @@
 import hashlib
 
+text="hello"
+digest=hashlib.sha256(text.encode()).hexdigest()
+print(text)
+print(f"sha 256 digest:{digest}")
+
 filename = "Experiment 2/Sample.txt"
 sha256_hash = hashlib.sha256()
 
@@ -11,8 +16,3 @@ print("Filename    :", filename)
 print("SHA-256 Hash:", sha256_hash.hexdigest())
 
 
-
-text="hello"
-digest=hashlib.sha256(text.encode()).hexdigest()
-print(text)
-print(f"sha 256 digest:{digest}")
