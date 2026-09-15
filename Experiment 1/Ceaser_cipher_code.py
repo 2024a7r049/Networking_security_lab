@@ -1,3 +1,4 @@
+
 def caesar_encryption(text, shift):
     encrypted = ""
 
